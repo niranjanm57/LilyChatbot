@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1543357480-c60d09b144d7') center center / cover no-repeat fixed;
+  }
+  
+  /* Wrapper for center alignment */
+  .chat-wrapper {
+    background-image: url('../assets/lily.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    position: relative;
+  }
+  
+  /* 🆕 Container to wrap header + chat, and apply radius/shadow together */
+  .chat-card {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  /* Header */
+  .chat-header {
+    background-color: #e2801fa4;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  /* Chat box container */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    background: transparent;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+  
+  /* Scrollable message area */
+  .chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    scroll-behavior: smooth;
+  }
+  
+  .chat-box::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb {
+    background-color: #d1c4e9;
+    border-radius: 10px;
+  }
+  
+  /* Message styling */
+  .bot-message,
+  .user-message {
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    max-width: 85%;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .bot-message {
+    background-color: #f1d5b7;
+    align-self: flex-start;
+    color: #4a148c;
+  }
+  
+  .user-message {
+    background-color: #c8e6c9;
+    align-self: flex-end;
+    color: #2e7d32;
+  }
+  
+  /* Input section */
+  .chat-input {
+    display: flex;
+    padding: 0.75rem;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 0.6rem 1rem;
+    background-color: #eb8231;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .chat-input button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  /* Mic button */
+  .mic-button {
+    background-color: #e65d8b;
+  }
+  
+  .mic-button:hover {
+    background-color: #ec407a;
+  }
+  
+  /* Recipe formatting */
+  .recipe-list {
+    padding-left: 20px;
+    margin-top: 0.5rem;
+  }
+  
+  .recipe-steps {
+    margin-top: 0.5rem;
+  }
+  
+  .recipe-step {
+    margin-bottom: 8px;
+  }
+  
