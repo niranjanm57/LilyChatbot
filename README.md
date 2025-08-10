@@ -2,7 +2,7 @@
 
 ## Technologies Used:
 - Flask + MongoDB Atlas
-- React.js + JWT Auth
+- React.js
 - Google Speech-to-Text + Text-to-Speech
 
 
