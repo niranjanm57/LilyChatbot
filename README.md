@@ -24,9 +24,5 @@ npm install
 npm start
 ```
 
-### 4. Docker Option:
-```bash
-docker-compose up --build
-```
 
 Enjoy cooking and chatting! 🍲🎙️
